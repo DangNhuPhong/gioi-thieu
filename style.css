@@ -15,8 +15,7 @@ body {
   margin-left: 50px;
   margin-top: 40px;
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 20%;
   object-fit: cover;
   border-radius: 50%;
 }
