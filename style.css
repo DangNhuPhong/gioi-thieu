@@ -20,9 +20,25 @@ body {
   object-fit: cover;
   border-radius: 50%;
 }
+@media (max-width: 600px) {
+  #ava {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 #ten {
   position: absolute;
   top: 170px;
   left: 280px;
+}
+
+@media (max-width: 600px) {
+  #ten {
+    position: relative;
+    top: 10px;
+    left: 0;
+    text-align: center;
+  }
 }
