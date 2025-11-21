@@ -3,17 +3,26 @@ h1 {
   display: flex;
   justify-content: center;
 }
-img1 {
-  display: flex;
-  justify-content: center;
-}
+
 body {
   background: linear-gradient(
-    to top,
+    to right,
     rgba(39, 23, 23, 0.5),
     rgba(211, 50, 50, 0.5)
   );
-  background-blend-mode: overlay;
-  background-size: 100% 100vh;
-  text-align: center;
+}
+#ava {
+  margin-left: 50px;
+  margin-top: 40px;
+  position: relative;
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#ten {
+  position: absolute;
+  top: 250px;
+  left: 300px;
 }
