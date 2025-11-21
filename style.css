@@ -12,8 +12,8 @@ body {
   );
 }
 #ava {
-  margin-left: 5%;
-  margin-top: 5%;
+  margin-left: 50px;
+  margin-top: 50px;
   position: relative;
   width: 200px;
   height: 200px;
@@ -22,13 +22,35 @@ body {
 }
 @media (max-width: 600px) {
   #ava {
+    margin-top: 0px;
+    border-top: 30px;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
+@media (min-width: 1300px) {
+  body {
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.2); /* optional viền */
+    border-radius: 20px;
+  }
+}
+
+#nen {
+  height: 145px;
+  width: 100%;
+  margin: 0px;
+  background-color: black;
+  position: absolute;
+  border-radius: 20px 20px 0 0;
+}
+
 #ten {
+  margin-top: 0px;
   position: absolute;
   top: 170px;
   left: 280px;
