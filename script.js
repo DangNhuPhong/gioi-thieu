@@ -77,3 +77,28 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
+ava.addEventListener("click", () => {
+  fullImg.src = ava.src;
+  overlay.style.display = "flex";
+
+  // Push a new state so the back button can exit fullscreen
+  history.pushState({ fullscreen: true }, "");
+});
+
+// Listen for back button (popstate)
+window.addEventListener("popstate", (event) => {
+  if (event.state && event.state.fullscreen) {
+    closeOverlay();
+  }
+});
+
+// Your closeOverlay() function
+function closeOverlay() {
+  overlay.style.display = "none";
+  fullImg.src = "";
+
+  // Go back one step so the browser returns to normal state
+  if (history.state && history.state.fullscreen) {
+    history.back();
+  }
+}
