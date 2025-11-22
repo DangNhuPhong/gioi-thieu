@@ -1,10 +1,10 @@
 body {
-  background: linear-gradient(
-    to right,
-    rgba(39, 23, 23, 0.5),
-    rgba(211, 50, 50, 0.5)
-  );
+  background: linear-gradient(to left, rgb(170, 88, 88), rgb(185, 135, 135));
   margin: 0px;
+}
+
+.thongtin {
+  margin: 10px;
 }
 
 #ava {
@@ -15,6 +15,7 @@ body {
   height: 200px;
   object-fit: cover;
   border-radius: 50%;
+  border: 1.5px solid #000;
 }
 #nen {
   height: 195px;
@@ -22,6 +23,7 @@ body {
   margin: 0px;
   background-color: rgb(82, 21, 21);
   position: absolute;
+  border-bottom: 1.5px solid #000;
 }
 #ten {
   margin-top: 0px;
@@ -50,16 +52,49 @@ body {
     text-align: center;
   }
 }
+#fullscreen {
+  position: fixed;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  display: none; /* toggled to 'flex' when open */
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 999999; /* ensure on top */
+  cursor: zoom-out;
+  padding: 20px;
+}
+#full-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+  cursor: auto; /* allow clicking overlay to close, but clicking image should not close */
+}
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   body {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
     position: relative;
     border: 1px solid rgba(0, 0, 0, 0.2); /* optional viền */
     border-radius: 20px;
+    background: linear-gradient(
+      to left,
+      rgb(172, 104, 104),
+      rgb(184, 149, 149)
+    );
   }
   #nen {
     border-radius: 20px 20px 0 0;
+  }
+  .background {
+    background: linear-gradient(to left, rgb(170, 88, 88), rgb(185, 135, 135));
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 19px;
+    z-index: -1;
+    opacity: 100%;
   }
 }
