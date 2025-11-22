@@ -1,9 +1,3 @@
-h1 {
-  color: rgb(0, 0, 0);
-  display: flex;
-  justify-content: center;
-}
-
 body {
   background: linear-gradient(
     to right,
@@ -23,7 +17,7 @@ body {
   border-radius: 50%;
 }
 #nen {
-  height: 145px;
+  height: 195px;
   width: 100%;
   margin: 0px;
   background-color: rgb(82, 21, 21);
@@ -32,19 +26,22 @@ body {
 #ten {
   margin-top: 0px;
   position: absolute;
-  top: 170px;
+  top: 140px;
   left: 280px;
+  color: azure;
 }
 @media (max-width: 600px) {
   #ava {
-    margin-top: 0px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
   #nen {
-    height: 100;
-    border-radius: 20px;
+    top: 0px;
+    height: 275px;
+    border-radius: 0 0 20px 20px;
   }
   #ten {
     position: relative;
